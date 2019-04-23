@@ -9,8 +9,8 @@ class Zamowienie:
         self.kontener = kontener
         self.paid = paid
 
-    def print_zamowienie(self):
+    def print_zamowienie(self, id):
         print("ID: {} \n"
               "Zamowienie opłacone? {}\n"
-              "Na kontener o wielkości {} litrów kosztuje {}zł\n\n".format(self.id, self.paid, self.kontener.size,
+              "Na kontener o wielkości {} litrów kosztuje {}zł\n\n".format(id, self.paid, self.kontener.size,
                                                                        self.kontener.price))

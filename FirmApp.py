@@ -51,7 +51,7 @@ class Firm:
                 self.kontenerlist.append(tmp_kontener)
             if select_char == '4':
                 for i in range(len(self.zamowienia)):
-                    self.zamowienia[i].print_zamowienie()
+                    self.zamowienia[i].print_zamowienie(i)
 
                 zam_input = int(input("Co chcesz zrobić:\n"
                                   "1. Akceptuj zamowienie\n"

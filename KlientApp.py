@@ -29,6 +29,6 @@ class Klient:
             elif select_char == '3':
                 for i in range(len(zamowienia)):
                     if zamowienia[i].id == id:
-                        zamowienia[i].print_zamowienie()
+                        zamowienia[i].print_zamowienie(i)
             elif select_char == "q" or select_char == "Q":
                 return
