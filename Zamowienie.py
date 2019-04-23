@@ -4,12 +4,13 @@ class Zamowienie:
         self.kontener = None
         self.paid = False
 
-    def set_zamowienie(self,id,kontener,paid):
+    def set_zamowienie(self, id, kontener, paid):
         self.id = id
         self.kontener = kontener
         self.paid = paid
 
     def print_zamowienie(self):
-        print("ID: {} Zamowienie opłacone? {}\n"
-              "Na kontener: {}",
-              self.id, self.paid, self.kontener.print_info_noID())
+        print("ID: {} \n"
+              "Zamowienie opłacone? {}\n"
+              "Na kontener o wielkości {} litrów kosztuje {}zł\n\n".format(self.id, self.paid, self.kontener.size,
+                                                                       self.kontener.price))

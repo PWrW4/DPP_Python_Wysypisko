@@ -25,6 +25,7 @@ class Klient:
                     kontenerlist[i].print_info(i)
                 kontener_id = int(input("Podaj id kontenera: "))
                 zamowienie.set_zamowienie(id, kontenerlist[kontener_id], False)
+                zamowienia.append(zamowienie)
             elif select_char == '3':
                 for i in range(len(zamowienia)):
                     if zamowienia[i].id == id:

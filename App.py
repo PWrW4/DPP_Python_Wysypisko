@@ -19,6 +19,7 @@ class App:
             if selectChar == '1':
                 firm.main_loop()
             elif selectChar == '2':
-                klient.main_loop(1, firm.kontenerlist, firm.zamowienia)
+                id = int(input("Podaj id klienta: "))
+                klient.main_loop(id, firm.kontenerlist, firm.zamowienia)
             elif selectChar == "q" or selectChar == "Q":
                 exit()
